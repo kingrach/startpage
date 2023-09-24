@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html id="html" data-theme="default" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- GetStarted - A simple responsive Startpage
+        Author: MrAlpha786  (github.con/MrAlpha786) -->
+
+    <title>hello, rachel</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span id="username">hello</span></h1>
+      <h3><span id="weather"></span></h3>
+      <div id="search">
+      <input id="search-field" type="text"/>
+      <button id="clear-field" onclick="clearField()"><img src="asset/icons/close.svg" alt="clear"></button>
+      <button id="search-button" onclick="search()"><img src="asset/icons/loupe.svg" alt="Go"></button>
+      </div>
+
+      <div class="table-container">
+        <div class="col-container" id="tab-container">
+      	  <div class="tab active" data-tab="tab-1" style="text-decoration:none; font-weight:bold" id="me">Me</div>
+      	  <div class="tab" data-tab="tab-2" style="text-decoration:none; font-weight:bold" id="social">Social</div>
+      	  <div class="tab" data-tab="tab-3" style="text-decoration:none; font-weight:bold" id="shop">Shop</div>
+      	  <div class="tab" data-tab="tab-4" style="text-decoration:none; font-weight:bold" id="other">Other</div>
+      	</div>
+
+      	<div class="col-container" id="content-container">
+      	  <div class="content active" data-tab="tab-1"></div>
+      	  <div class="content" data-tab="tab-2"></div>
+      	  <div class="content" data-tab="tab-3"></div>
+      	  <div class="content" data-tab="tab-4"></div>
+      	</div>
+      </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main2.js"></script>
+
+  </body>
+</html>
